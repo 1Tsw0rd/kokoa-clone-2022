@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- vsc에서 ! 입력 후 엔터 누르면 기본적인 틀 작성됨-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Kokoa Talk</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+        <!--그냥 column이라고 하면 흔한 이름이라 헷갈릴 수 있다.
+            그리고 부모__자식 이런 식으로 하여 좀 더 가독성있게 함
+            내가 내 코드를 다시 볼 때, 남들이 내 코드를 찾아 볼 때 이해에 도움을 줌
+            좀 더 쉽게 읽히는 css를 위해..
+            이게 BEM(Block Element Modifier) 규칙이라고 하는데 class만 쓰자고 함
+            (싫어해서 안 따르는 사람들도 있음)
+            .class명은 Block
+            .class명__의미 : 자신이 속한 블럭 내에서 가지는 의미
+            .class명--스타일명 : 속성을 수정하는 부분(Modifier)
+            https://css-tricks.com/bem-101/-->
+            <span>No Service</span>
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>11%</span>
+            <i class="fas fa-battery-quarter fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <p class="welcome-header__text">If you have a Kokoa Account, log in with yout email or phone number.</p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number" />
+        <input name="password" type="password" placeholder="Password" />
+        <input type="submit" value="Log In" />
+        <a href="#">Find Kokoa Account or Password</a>  
+    </form>
+    <div id="no-mobile">
+        <span>Your screen is too big ToT</span>
+    </div>
+    <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
