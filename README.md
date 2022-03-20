@@ -1,3 +1,3 @@
-# Kokoa Clone 2022 Update
+# Kokoa Clone 2022 Final
 
-HTML and CSS are so much fun!
+Ga zu a~~~
